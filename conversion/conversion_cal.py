@@ -1,8 +1,14 @@
 def sel():
-    input("Please slect your unit on conversion" + " Lbs to Kg")
+    lbs = "lbs"
+    unit = input("Please type lbs for conversion: ")
+   
+    if unit == str(lbs):
+         transfer = float(input("What is the weight in lbs? "))
+         kg = 0.453592 * transfer
+         print("The weight is  " + str(kg) + " Kilograms")
+        
+    else: 
+        print("Incorrect unit of conversion")
+        
+sel()
 
-def convert():
-    transfer = float(input("What is the weight in lbs? "))
-    kg = 0.453592 * transfer
-    print("The weight is  " + str(kg) + " Kilograms")
-convert()
