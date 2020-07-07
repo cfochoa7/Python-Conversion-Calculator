@@ -6,6 +6,12 @@ def sel():
     if unit == lbs:
          transfer = float(input("What is the weight in lbs? "))
          kg = 0.453592 * transfer
+         
+         if kg == 0:
+             kg = 0.453592
+         else:
+             pass
+         
          print("The weight is " + str(kg) + " Kilograms")
     
     elif unit == kgs:
