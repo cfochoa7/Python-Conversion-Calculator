@@ -1,7 +1,8 @@
 def sel():
     lbs = "lbs"
     kgs = "kgs"
-    unit = input("Please type lbs or kgs for conversion: ")
+    inches = "inches"
+    unit = input("Please type lbs/kgs or inches for conversion: ")
    
     if unit == lbs:
          transfer = float(input("What is the weight in lbs? "))
@@ -18,6 +19,11 @@ def sel():
         transfer = float(input("What is the weight in kgs? "))
         lbs = 2.20462 * transfer
         print ("The weight is " + str(lbs) + " Pounds.")
+    
+    elif unit == inches:
+        transfer = float(input("What is the length in inches? "))
+        cm = 2.54 * transfer
+        print("The length is " + str(cm) + " Centimeters")
         
     else: 
         print("Incorrect unit of conversion")
